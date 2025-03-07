@@ -31,8 +31,8 @@ class Solution {
         int cand = 0;
         int count = 0;
         for(int i =0;i<nums.length;i++){
-            //new ele
-            if(cand == 0){
+            //new ele if the count of the previous ele is 0
+            if(count == 0){
                 cand =nums[i];
             }
             //if same than increase the count
