@@ -45,9 +45,12 @@ class Solution:
         #creating a empty list 
         result =[]
         
-        # we we will each element one by one 
+        # we  will check each element one by one 
         for num in nums2:
             if(freqArr[num]>0):
                 result.append(num)    
-                freqArr-=1
+                freqArr[num]-=1
         return result        
+
+s1= Solution()
+print(s1.intersect([1,2,4,8,7],[2,8,6,5]))
