@@ -20,3 +20,5 @@ class Solution:
                     return [i, j]
         return None
 
+s1 = Solution()
+print(s1.twoSum([2,1,3,5,4,2,3],5))
