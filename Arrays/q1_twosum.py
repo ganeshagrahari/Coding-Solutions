@@ -5,13 +5,14 @@ class Solution:
         #         if nums[i] + nums[j] == target:
         #             return [i, j]
         # return None
-        prevMap = {}
-        for i, num in enumerate(nums):
-            diff = target - num
-            if diff in prevMap:
-                return [prevMap[diff],i]
-            prevMap[num] = i
-        return        
+      PrevMap = {} #val : index
+
+      for i, num in enumerate(nums):
+         diff = target - num
+         if diff in PrevMap:
+            return [PrevMap[diff], i]
+         PrevMap[num] = i
+         
 
 
 s1 = Solution()
