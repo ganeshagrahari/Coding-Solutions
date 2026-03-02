@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
         """
         n =len(nums)
-        j = 1
+        j = 1 #write pointer 
         for i in range(1,n):
             if nums[i] != nums[i-1]: #means unique numbers
                 nums[j] = nums[i]
